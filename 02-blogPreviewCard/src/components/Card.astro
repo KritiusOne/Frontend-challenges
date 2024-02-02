@@ -1,0 +1,24 @@
+---
+import Badge from "./Badge.astro";
+import Img from "./Img.astro";
+import Avatar from "./Avatar.astro"
+
+---
+<article class="bg-white max-w-sm h-4/5 rounded-3xl flex flex-col justify-center items-center py-2 px-8 shadow-[8px_8px_0px_0px_rgba(0,0,0)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0)] transition-shadow">
+  <header class="flex flex-col items-center justify-center w-full py-2">
+    <Img class="flex justify-center items-center flex-col w-12/12 rounded-3xl px-0" />
+    <section class="w-full flex flex-col justify-center gap-2 items-start py-2 ">
+      <Badge>Learning</Badge>
+      <h3 class="font-semibold text-grey">Published 21 Dec 2023</h3>
+    </section>
+  </header>
+  <main class="flex flex-grow flex-col justify-start">
+    <h1 class="text-minusBlack font-extrabold text-2xl hover:text-yellow transition-colors">HTML & CSS Foundations</h1>
+    <p class="text-grey text-4 font-semibold text-balance">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus saepe labore iure reprehenderit magni, quo molestias! Maxime impedit beatae facere velit.
+    </p>
+  </main>
+  <footer class="w-full py-2">
+    <Avatar class="flex flex-row justify-start items-center gap-4"/>
+  </footer>
+</article>
