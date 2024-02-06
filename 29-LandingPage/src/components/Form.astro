@@ -1,0 +1,8 @@
+---
+const {titleButton, placeHolder} = Astro.props
+const classNames = Astro.props.class
+---
+<form class={`flex flex-col gap-4 sm:flex-row ${classNames}`}>
+  <input type="text"  placeholder={placeHolder} class="px-6 py-2 border-solid border-neutral-lightGray border-2 w-80 outline-none text-primary-vDarkBlue">
+  <button class="bg-accent-brightBlue text-neutral-whiteBlue text-lg font-semibold px-8 py-2"> { titleButton }</button>
+</form>

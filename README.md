@@ -6,18 +6,18 @@ Estos retos son realizados con el fin de practicar mi habilidad con estás tecno
 * HTML
 * CSS
 * JS
+* TS
 * React
 * Tailwind CSS
+* Astro
 
-Proximamente, planeo incluir otras, como bien pueden ser Astro.js
 
 ## Retos resueltos
 
 *  Reto 1: Profile Card
-
-## Instrucciones
-
-Para resolver un reto, simplemente crea una nueva rama en el repositorio y comienza a trabajar. Cuando hayas terminado, envía una solicitud de extracción para que pueda revisar tu código.
+*  Reto 2: Blog Preview Card
+*  Reto 25: Testimonials Grid Section
+*  Reto 29: Landing Page Fylo
 
 ## Contribuciones
 
