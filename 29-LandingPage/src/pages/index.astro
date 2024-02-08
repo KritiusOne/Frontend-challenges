@@ -6,12 +6,16 @@ import Header from '../components/Header.astro';
 import Sections from '../components/Sections.astro';
 import ArrowRight from '../components/icons/ArrowRight.astro';
 import Layout from '../layouts/Layout.astro';
+import IllustrationOne from "../images/illustration-1.svg"
+import IllusetrationTwo from "../images/illustration-2.svg"
+import CurveDesktop from "../images/bg-curve-desktop.svg"
+import CurveMobile from "../images/bg-curve-mobile.svg"
 ---
 
 <Layout title="Fylo Landing Page">
 	<Header />
 	<main class="flex flex-col justify-center items-center w-full gap-8">
-		<Sections class="bg-[#fff] px-8" img="../../public/images/illustration-1.svg" >
+		<Sections class="bg-[#fff] px-8" img={IllustrationOne.src} >
 			<h1 slot="title" class="font-bold text-4xl text-primary-vDarkBlue text-pretty text-center sm:text-left">All your files in one secure location, accessible anywhere.</h1>
 			<p slot="paragraph"
 				class="text-primary-vDarkBlue"
@@ -21,10 +25,10 @@ import Layout from '../layouts/Layout.astro';
 			<Form slot="content" titleButton="Get Started" placeHolder="Enter your email" />
 		</Sections>
 		<picture>
-			<source media="(min-width: 600px)" srcset="../../public/images/bg-curve-desktop.svg, ../../public/images/bg-curve-mobile.svg">
-			<img src="../../public/images/bg-curve-mobile.svg" />
+			<source media="(min-width: 600px)" srcset={`${CurveDesktop.src}, ${CurveMobile.src}`} >
+			<img src={CurveDesktop.src} alt="this is the curve from UI" />
 		</picture>
-		<Sections class="px-8" img="../../public/images/illustration-2.svg" >
+		<Sections class="px-8" img={IllusetrationTwo.src} >
 			<h2 slot="title" class="font-bold text-4xl text-primary-vDarkBlue text-pretty text-center sm:text-left">Stay productive, wherever you are </h2>
 			<div slot="paragraph" class="flex flex-col justify-center items-center sm:justify-center sm:items-start gap-2">
 					<p 
